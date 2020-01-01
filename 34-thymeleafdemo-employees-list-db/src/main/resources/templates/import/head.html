@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title,links)">
+<!-- Common styles and scripts -->
+<title th:replace="${title}"></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Required meta tags -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta> -->
+<!-- <meta name="renderer" content="webkit" /> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> -->
+<!-- <meta name="description" content=""></meta> -->
+<!-- <meta name="author" content=""></meta> -->
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta> -->
+<!-- <link rel="icon" href="/img/icon.ico" type="image/x-icon" /> -->
+
+<link rel="icon" th:href="@{/pic/read.png}">
+ <link rel="import" th:href="@{/login/login.html}">
+<!-- import css -->
+
+<link rel="stylesheet"
+	href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+<!-- bootstrap  -->
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap/bootstrap.min.css}">
+
+
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap/bootstrap-grid.min.css}">
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap/bootstrap-reboot.min.css}">
+
+
+
+<!-- login -->
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/login/login-register.css}">
+
+
+
+<style>
+body {
+	padding-top: 60px;
+}
+</style>
+<!--/* Per-page placeholder for additional links */-->
+<!--     <th:block th:replace="${links}" /> -->
+
+</head>
+</html>

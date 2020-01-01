@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head th:replace="/import/head::head(~{::title},~{::link})">
+<meta charset="utf-8">
+<title>albertcode Leaders Home Page</title>
+
+</head>
+
+<body>
+	<div class="container">
+		<h2>albertcode Leaders Home Page</h2>
+		<hr>
+		<p>
+			See you in Brazil ... for our annual Leadership retreat! <br>
+			Keep this trip a secret,don's tell the regular employees LOL :-)
+
+		</p>
+		<hr>
+		<a th:href="@{/}">Back to Home Page</a>
+
+
+		<!-- container -->
+	</div>
+
+
+	<!--使用公有js-->
+	<div th:replace="/import/common_js::common_js(~{::script})"></div>
+</body>
+</html>

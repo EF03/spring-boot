@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<div th:fragment="common_js(scripts)">
+
+	<!-- import -->
+	<script type="text/javascript" sec:authorize="!isAuthenticated()">
+		$(document).ready(function() {
+			openLoginModal();
+		});
+	</script>
+
+
+	<!-- import jQuery -->
+	<script type="text/javascript"
+		th:src="@{/js/jquery/jquery-3.4.1.min.js}"></script>
+	<!-- ===== import js ========== -->
+
+	<!-- bootstrap  -->
+	<script type="text/javascript"
+		th:src="@{/js/bootstrap/bootstrap.bundle.min.js}"></script>
+	<script type="text/javascript"
+		th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+
+	<!-- sweetAlert -->
+
+
+	<script type="text/javascript"
+		th:src="@{/js/sweetalert/sweetalert.min.js}"></script>
+
+
+	<!-- login -->
+	<script type="text/javascript" th:src="@{/js/login/login-register.js}"></script>
+
+	<!-- import login -->
+
+	<!-- <%@include file="/WEB-INF/view/login/login.jsp"%> -->
+
+	<!--/* Per-page placeholder for additional js */-->
+	<!--     <th:block th:replace="${scripts}" /> -->
+</div>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/import/head::head(~{::title},~{::link})">
+<head>
+<title>Thymeleaf Demo</title>
+<!-- <link rel="import" href="/import/head.html"> -->
+<!-- import -->
+<!-- <link rel="import" href="/import/common_js.html"> -->
+</head>
+<body>
+
+	<div class="container">
+		<p th:text="'Time on the server is'+${theDate}" />
+		<p>
+			We are running on <span th:text="${#servletContext.getServerInfo()}"></span>!!!
+		</p>
+
+	</div>
+
+
+	<!--import js-->
+	<div th:replace="/import/common_js::common_js(~{::script})"></div>
+
+</body>
+</html>

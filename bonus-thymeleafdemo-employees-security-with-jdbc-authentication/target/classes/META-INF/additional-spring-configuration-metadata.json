@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "security.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'security.datasource.password'"
+  },
+  {
+    "name": "security.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'security.datasource.username'"
+  },
+  {
+    "name": "security.datasource.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'security.datasource.jdbc-url'"
+  }
+]}
